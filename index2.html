@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let playerName = prompt("Nom du joueur");
+        let playerNumber = prompt("Donne un numéro entre 1 et 100");
+        let playerWins = "titi";
+        const random = Math.floor(Math.random() * 100) + 1;
+        
+        while(parseInt(playerNumber) !== random){
+            if (parseInt(playerNumber) > random){
+                alert("It is less");
+            }
+            if (parseInt(playerNumber) < random){
+                alert("It is more"); 
+            }
+            playerNumber = prompt("Donne un nouveau numéro");
+        }
+            alert(playerName + " wins.");
+            playerWins = playerName
+            console.log(playerWins + " 1er place")
+
+
+    </script>
+</body>
+</html>
